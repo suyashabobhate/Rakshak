@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crime_login_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/crime_login_page"
+        tools:layout_editor_absoluteY="-63dp">
+
+    <TextView
+        android:id="@+id/signuptextview"
+        android:layout_width="227dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/butcherman"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+        <TextView
+            android:id="@+id/nametextview"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/signuptextview"
+            android:layout_marginBottom="-60dp"
+            android:paddingLeft="40dp"
+            android:text="Name :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <TextView
+            android:id="@+id/agetextview"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nametextview"
+            android:textSize="20dp"
+            android:layout_marginBottom="-55dp"
+            android:text="Age :"
+            android:paddingLeft="40dp"
+            android:textColor="#FFFFFF"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <TextView
+        android:id="@+id/mobilenotextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No :"
+            android:layout_alignBottom="@id/agetextview"
+            android:textSize="20dp"
+            android:layout_marginBottom="-55dp"
+            android:paddingLeft="40dp"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mailidtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail ID :"
+        android:layout_alignBottom="@id/mobilenotextview"
+        android:textSize="20dp"
+        android:layout_marginBottom="-55dp"
+        android:paddingLeft="40dp"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="366dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/passwordtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:layout_alignBottom="@id/mailidtextview"
+        android:textSize="20dp"
+        android:layout_marginBottom="-55dp"
+        android:paddingLeft="40dp"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="430dp"
+        tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/nameedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/nametextview"
+            android:layout_alignBottom="@id/signuptextview"
+            android:layout_marginRight="-279dp"
+            android:layout_marginBottom="-58dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <EditText
+        android:id="@+id/ageedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+            android:layout_alignRight="@id/agetextview"
+            android:layout_alignBottom="@id/nameedittext"
+            android:layout_marginRight="-259dp"
+            android:layout_marginBottom="-57dp"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+        <EditText
+            android:id="@+id/mobileedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/mobilenotextview"
+            android:layout_alignBottom="@id/ageedittext"
+            android:layout_marginRight="-226dp"
+            android:layout_marginBottom="-55dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <EditText
+        android:id="@+id/mailedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/mailidtextview"
+        android:layout_alignBottom="@id/mobileedittext"
+        android:layout_marginRight="-259dp"
+        android:layout_marginBottom="-57dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+        <EditText
+            android:id="@+id/passwordedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/passwordtextview"
+            android:layout_alignBottom="@id/mailedittext"
+            android:layout_marginRight="-229dp"
+            android:layout_marginBottom="-61dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/passwordtextview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-97dp"
+            android:fontFamily="@font/butcherman"
+            android:gravity="center_horizontal"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="519dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

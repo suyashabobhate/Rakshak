@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crime_login_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/crime_login_page"
+        tools:layout_editor_absoluteY="-63dp">
+
+
+    <TextView
+        android:id="@+id/addmissingtv"
+        android:layout_width="304dp"
+        android:layout_height="69dp"
+        android:text="ADD MISSING PERSON"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/nametv"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addmissingtv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:text="NAME :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <TextView
+            android:id="@+id/agetv"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nametv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:text="AGE :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <TextView
+            android:id="@+id/mobnotv"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/agetv"
+            android:layout_marginBottom="-60dp"
+            android:text="YOUR MOBILE NO :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <TextView
+        android:id="@+id/gendertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENDER :"
+            android:layout_alignBottom="@id/mobnotv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="286dp"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/timetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gendertv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:text="TIME :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+        <TextView
+            android:id="@+id/datetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/timetv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:text="DATE :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/nametv"
+            android:layout_alignBottom="@id/addmissingtv"
+            android:layout_marginRight="-225dp"
+            android:layout_marginBottom="-49dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="60dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        <EditText
+            android:id="@+id/ageedit"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/agetv"
+            android:layout_alignBottom="@id/nameedit"
+            android:layout_marginRight="-226dp"
+            android:layout_marginBottom="-56dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <EditText
+            android:id="@+id/mobileedittext"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/mobnotv"
+            android:layout_alignBottom="@id/ageedit"
+            android:layout_marginRight="-226dp"
+            android:layout_marginBottom="-58dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/gendertv"
+            android:layout_alignBottom="@id/mobileedittext"
+            android:layout_marginRight="-92dp"
+            android:layout_marginBottom="-48dp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/butcherman"
+            android:text="FEMALE"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/female"
+            android:layout_alignBottom="@id/mobileedittext"
+            android:layout_marginRight="-83dp"
+            android:layout_marginBottom="-46dp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/butcherman"
+            android:text="MALE"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="270dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <EditText
+            android:id="@+id/timeedit"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/timetv"
+            android:layout_alignBottom="@id/gendertv"
+            android:layout_marginRight="-225dp"
+            android:layout_marginBottom="-49dp"
+            android:ems="10"
+            android:inputType="time"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+        <EditText
+            android:id="@+id/dateedit"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_alignRight="@id/datetv"
+            android:layout_alignBottom="@id/timeedit"
+            android:layout_marginRight="-225dp"
+            android:layout_marginBottom="-49dp"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:id="@+id/lastseentv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/datetv"
+        android:layout_marginBottom="-54dp"
+        android:paddingLeft="60dp"
+        android:text="LAST SEEN"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/butcherman"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="330dp"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/conditiontv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lastseentv"
+            android:layout_marginBottom="-54dp"
+            android:paddingLeft="60dp"
+            android:text="CONDITION :"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="502dp" />
+
+        <EditText
+            android:id="@+id/conditionedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/conditiontv"
+            android:layout_alignBottom="@id/lastseentv"
+            android:layout_marginRight="-228dp"
+            android:layout_marginBottom="-56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="502dp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-64dp"
+            android:background="@android:color/black"
+            android:fontFamily="@font/butcherman"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="632dp" />
+
+        <TextView
+            android:id="@+id/addphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/conditiontv"
+            android:layout_marginBottom="-62dp"
+            android:text="ADD PHOTO"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:paddingLeft="60dp"
+            app:fontFamily="@font/butcherman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="572dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            android:layout_alignRight="@id/addphoto"
+            android:layout_alignBottom="@id/conditionedit"
+            android:layout_marginRight="-49dp"
+            android:layout_marginBottom="-51dp"
+            app:srcCompat="@drawable/ic_add_circle_outline_black_24dp"
+            tools:ignore="MissingConstraints,VectorDrawableCompat"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="574dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
