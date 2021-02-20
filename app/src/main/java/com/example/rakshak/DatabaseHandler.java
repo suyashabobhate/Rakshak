@@ -165,23 +165,23 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }*/
 
    Boolean getDataToVerify(String name, String password){
-       String query = "SELECT "+KEY_Password +" FROM "+TABLE_User+" WHERE name='" + name+"'";
+       String query = "SELECT "+KEY_Password +" FROM "+TABLE_User+" WHERE name= '" + name+" ' ";
        SQLiteDatabase db = this.getReadableDatabase();
-       Cursor  cursor = db.rawQuery(query,null);
-
-       if (cursor != null) {
-           cursor.moveToFirst();
-       }
-       Log.println(1,"cursor",cursor.toString());
-       if(getDramaCount()!=0) {
-           if (cursor.getString(5) == password) {
+       Cursor mCursor = db.rawQuery(query, null);
+       mCursor.moveToFirst();
+       //Log.println(1,"cursor",cursor.toString());
+       if(mCursor.getCount()>0) {
+           Log.w("mycursorvalue",mCursor.getString(4));
+           if (mCursor.getString(4).equals(password)) {
+               mCursor.close();
                return true;
            }
        }
        return false;
    }
 
-    public int getDramaCount() {
+
+    public int getCrimeCount() {
         String countQuery = "SELECT  * FROM " + TABLE_User;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(countQuery, null);
@@ -192,7 +192,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-    // code to get the single contact
+    //
     String getList(int id,String table) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -223,7 +223,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-    // code to get all contacts in a list view
+    // code to get all
     public List<Crime> getAllCrime(String table) {
         List<Crime> list = new ArrayList<Crime>();
         // Select All Query
@@ -238,24 +238,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 Crime crime = new Crime();
                 crime.setID(Integer.parseInt(cursor.getString(0)));
                 crime.setName(cursor.getString(1));
-                // Adding contact to list
                 list.add(crime);
             } while (cursor.moveToNext());
         }
 
-        // return contact list
         return list;
     }
-
-
-    // Deleting single contact
-    public void deleteDrama(int id, String table) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(table, KEY_ID + " = ?",
-                new String[] { String.valueOf(id) });
-        db.close();
-    }
-
-
-
 }

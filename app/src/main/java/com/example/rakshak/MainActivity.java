@@ -22,13 +22,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText nameTextView=findViewById(R.id.nameedit);
         final EditText passwordTextView=findViewById(R.id.passwordedittext);
 
-
-
-
-
-
-
-
         final Button loginButton=findViewById(R.id.login);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -72,38 +65,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
-
-    /*private AlertDialog AskOption()
-    {
-        AlertDialog myQuittingDialogBox = new AlertDialog.Builder(this)
-                // set message, title, and icon
-                .setTitle("Watched")
-                .setMessage("Have you watched this Kdrama?")
-
-
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        String delete= (String) listview.getItemAtPosition(pos);;
-                        delete(delete);
-                        dialog.dismiss();
-                    }
-
-                })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        dialog.dismiss();
-
-                    }
-                })
-                .create();
-
-        return myQuittingDialogBox;
-    }*/
-
-
 }
